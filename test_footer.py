@@ -15,6 +15,11 @@ class FooterElementsTest(unittest.TestCase):
         self.driver.get("https://only.digital/")
 
         try:
+            footer = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_element_located(("tag name", "footer"))
+            )
+            print("Футер найден!")
+
             logo_pic = WebDriverWait(self.driver, 10).until(
                 EC.presence_of_element_located(("class name", "Footer_logo__2QEhf"))
             )
