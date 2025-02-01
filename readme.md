@@ -12,9 +12,9 @@
 ## Стек
 
 - Python 3
+- WebDriver Manager
 - Selenium WebDriver
 - unittest
-- WebDriver Manager
 
 ## Установка
 1. Клонируйте репозиторий:
@@ -24,11 +24,8 @@ cd footer-elements-test`
 2. Установите необходимые зависимости:
 `pip install -r requirements.txt`
 
-3. Убедитесь, что у вас установлен Python 3 и pip.
-
-4. Запуск теста
-Для запуска теста используйте команду:
-`python test_footer_elements.py`
+3. Запуск теста:
+`python -m unittest test_footer.py`
 Тест откроет браузер с помощью ChromeDriver, проверит элементы футера и выведет результаты в консоль.
 
 ## Описание теста
